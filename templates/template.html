@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!--Стартовые стили шаблона-->
+  <link rel="stylesheet" href="css/starter.css">
+  <!--Ваши стили-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+	<!--НАЧАЛО Шапка-->
+  <header class="mainheader">
+    <div class="container">
+     
+      <img src="img/logo.png">
+      
+      <nav class="mainnav">
+      	<ul>
+      		<li><a href="#day">Серия дня</a></li>
+      		<li><a href="#about">О компании</a></li>
+      		<li><a href="#order">Оставить заявку</a></li>
+      		<li><a href="#products">Собери комплект</a></li>
+      		<li><img src="img/cart25.png"> <span class="cartCount">0</span></li>
+      	</ul>
+      </nav>
+    </div>
+  </header>
+	<!--КОНЕЦ Шапка-->
+
+  <main>
+    <div class="container">
+     
+      <!--НАЧАЛО Секция "Серия недели"-->
+      <section id="day">
+        <h2>Серия дня</h2>
+         
+        <!-- НАЧАЛО обертки-->
+        <div class="series_wrapper">
+          <img src="kartinka">
+          <div class="info">
+            <h3>nazvanie</h3>
+            <p>
+              opisanie
+            </p>
+          </div>
+        </div>
+        <!-- КОНЕЦ обертки-->
+      </section>
+      <!--КОНЕЦ Секция "Серии наборов"-->
+      
+      
+      
+      <!--НАЧАЛО Секция "О компании"-->
+      <section id="about">
+      	<h2>О компании</h2>
+        <p>
+          LEGO Group — датская частная компания, занимающаяся производством одноимённых серий развивающих игрушек, представляющих собой наборы деталей для сборки и моделирования разнообразных предметов — конструкторов. Второй по величине (после Hasbro) производитель игрушек в мире.
+          <br><br>
+          Головной офис компании находится в Дании. Здесь же, в Дании, на полуострове Ютландия, в небольшом городке Биллунд, находится и самый большой Леголенд в мире — город, полностью построенный из конструктора LEGO.
+          <br><br>
+          Основой наборов является кирпичик LEGO — деталь, представляющая собой полый пластмассовый блок, соединяющийся с другими такими же кирпичиками на шипах. В наборы также могут входить множество других деталей: фигурки людей и животных, колёса и так далее. Существуют наборы, в которые входят электродвигатели, различного рода датчики и даже микроконтроллеры. Наборы позволяют собирать модели автомобилей, самолётов, кораблей, зданий, роботов. Воплощает идею модульности, наглядно демонстрирующий детям то, как можно решать некоторые технические проблемы, также прививает навыки сборки, ремонта и разборки техники.
+        </p>
+      </section>
+      <!--КОНЕЦ Секция "О компании"-->
+      
+      
+      
+      <!--НАЧАЛО Секция "Оставить заявку"-->
+      <section id="order">
+      	<h2>Оставить заявку</h2>
+      	
+        <!--НАЧАЛО Форма-->
+        <form action="" method="">
+         
+          <div class="order-wrapper">
+            <div class="order-left">
+             
+              <!--Имя-->
+              <label for="firstname_field">Имя</label>
+              <input type="text" id="firstname_field" name="firstname"> 
+              
+              <!--Фамилия-->
+              <label for="lastname_field">Фамилия</label>
+              <input type="text" id="lastname_field" name="lastname">
+              
+              <!--Номер телефона-->     	
+              <label for="phone_field">Телефон</label>
+              <input type="text" id="phone_field" name="phone">
+              
+            </div>
+            <div class="order-right"> 
+             
+              <!--Сообщение-->      	
+              <label for="message_field">Сообщение</label>
+              <textarea id="message_field" name="message"></textarea>
+              
+            </div>      	  
+          </div>
+          
+          <!--Кнопка отправить-->      
+          <input type="submit" value="Отправить">
+          
+        </form>
+        <!--КОНЕЦ Форма-->
+        
+      </section>
+      <!--КОНЕЦ Секция "Оставить заявку"-->
+      
+      
+      
+      <!--НАЧАЛО Секция "Собери комплект"-->
+      <section id="products">
+      	<h2>Собери комплект</h2>
+      	
+        <label for="search_field">Поиск</label>
+      	<div class="search">
+          <input type="text" id="search_field" name="search"> 
+          <input type="submit" value="Найти товары">
+      	</div>
+      	
+      	<!--НАЧАЛО Обертка/флекс-контейнер для товаров-->
+      	<div class="goods-wrapper">
+      	
+      		<!--НАЧАЛО Товар №1-->
+      		<div class="product">
+      			<img src="goods/1.png">
+      			<h4>Пожарная машина</h4>
+      			<button class="addCart"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №1-->
+      		<!--НАЧАЛО Товар №2-->
+      		<div class="product">
+      			<img src="goods/2.jpg">
+      			<h4>Гоночная машина</h4>
+      			<button class="addCart"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №2-->
+      		<!--НАЧАЛО Товар №3-->
+      		<div class="product">
+      			<img src="goods/3.jpg">
+      			<h4>Попугай</h4>
+      			<button class="addCart"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №3-->
+      		
+      		<!--НАЧАЛО Товар №4-->
+      		<div class="product">
+      			<img src="goods/4.jpg">
+      			<h4>Аэропорт</h4>
+      			<button class="addCart"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №4-->
+      		<!--НАЧАЛО Товар №5-->
+      		<div class="product">
+      			<img src="goods/5.jpg">
+      			<h4>Вертолет</h4>
+      			<button class="addCart"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №5-->
+      		<!--НАЧАЛО Товар №6-->
+      		<div class="product">
+      			<img src="goods/6.jpg">
+      			<h4>Дом (красный)</h4>
+      			<button class="addCart"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №6-->
+      	</div>
+      	<!--КОНЕЦ Обертка/флекс-контейнер для товаров-->
+      </section>
+      <!--КОНЕЦ Секция "Собери комплект"-->
+      
+    </div>
+  </main>
+  
+  
+  
+  <!--Скрипт на языке JS игнорируйте будто его нет :)-->
+  <script>
+    'use strict';
+    let cartBtns = document.querySelectorAll('.addCart');
+    for(let i=0; i<cartBtns.length; i++){
+      let curBtn = cartBtns[i];
+      curBtn.addEventListener('click', function(){
+        document.querySelector('.cartCount').innerHTML++;
+      })
+    }
+  </script>
+</body>
+</html>
